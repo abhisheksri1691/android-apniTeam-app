@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/swipeToRefresh"
+        android:layout_height="500dp">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardElevation="5dp"
+        android:id="@+id/cardview_id_live">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:id="@+id/tvTitleLive"
+            android:text="RCB Vs RR"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:id="@+id/tvTeam1Live"
+        android:text="N/A"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/tvUser1Score"
+        android:text="0"/>
+
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTeam2Live"
+            android:textStyle="bold"
+            android:text="N/A"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/tvUser2Score"
+            android:text="0"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvTimeLive"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Wed, 30 Sep * 7:30 PM"/>
+</LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Team"
+        android:id="@+id/btCreateTeam"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/colorAccent"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Player1Name"
+        android:text="Abhishek *"
+        android:textSize="15sp"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        />
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorAccent"
+            android:layout_marginStart="10dp"
+            android:id="@+id/view"
+            android:layout_gravity="center"
+            android:layout_height="2dp">
+
+        </View>
+    </LinearLayout>
+ <!--   <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_drawble">
+
+    </ImageView>-->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relativeLayout"
+    android:layout_marginStart="10dp"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Player1Name1"
+        android:text="De Cock"
+        android:textSize="15sp"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Player1Name1Status"
+        android:text="batting"
+        android:textColor="@color/colorGrey"
+        android:textStyle="italic"
+        android:textSize="12sp"
+        android:layout_below="@+id/tv_Player1Name1"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Player1Name1Score"
+        android:text="na"
+        android:layout_marginEnd="10dp"
+        android:layout_alignEnd="@+id/tv_Player1Name1"
+        android:textSize="15sp">
+
+    </TextView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Player1Name2"
+        android:text="Rohit Sharma"
+        android:layout_below="@+id/tv_Player1Name1Status"
+        android:textSize="15sp"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Player1Name2Status"
+        android:text="batting"
+        android:textColor="@color/colorGrey"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:layout_below="@+id/tv_Player1Name2"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_Player1Name2Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_Player1Name1"
+        android:layout_alignEnd="@+id/tv_Player1Name1"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="11dp"
+        android:text="na"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Player1Name3"
+        android:text="Rohit"
+        android:layout_below="@+id/tv_Player1Name2Status"
+        android:textSize="15sp"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Player1Name3Status"
+        android:textColor="@color/colorGrey"
+        android:textSize="12sp"
+        android:text="N/A"
+        android:textStyle="italic"
+        android:layout_below="@+id/tv_Player1Name3"
+
+        />
+
+
+    <TextView
+        android:id="@+id/tv_Player1Name3Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_Player1Name2"
+        android:layout_alignEnd="@+id/tv_Player1Name3"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:text="na"
+        android:textSize="15sp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Player1Name4"
+        android:text="H pandaey"
+        android:layout_below="@+id/tv_Player1Name3Status"
+        android:textSize="15sp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Player1Name4Status"
+        android:textColor="@color/colorGrey"
+        android:textSize="12sp"
+        android:text="N/A"
+        android:textStyle="italic"
+        android:layout_below="@+id/tv_Player1Name4"
+
+        />
+
+
+    <TextView
+        android:id="@+id/tv_Player1Name4Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_Player1Name3"
+        android:layout_alignEnd="@+id/tv_Player1Name4"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:text="na"
+        android:textSize="15sp">
+
+    </TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Player2Name"
+        android:textStyle="bold"
+        android:text="Abhinav sharma fgfg*"
+        android:layout_below="@+id/tv_Player1Name4Status"
+        android:textSize="15sp"
+        android:layout_marginTop="2dp"
+
+        />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="#CDDC39"
+    android:layout_marginTop="12dp"
+    android:layout_marginStart="10dp"
+    android:layout_below="@+id/tv_Player1Name4Status"
+    android:layout_toEndOf="@+id/tv_Player2Name">
+
+</View>
+<!--    <View-->
+<!--        android:layout_width="250dp"-->
+<!--        android:background="@color/colorPrimaryDark"-->
+<!--        android:layout_below="@+id/tv_Player2Name"-->
+<!--        android:layout_alignEnd="@+id/tv_Player2Name"-->
+<!--        android:layout_height="1dp">-->
+
+<!--    </View>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Player2Name1"
+        android:text="dfdff"
+        android:layout_below="@+id/tv_Player2Name"
+        android:textSize="15sp"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Player2Name1Status"
+        android:textColor="@color/colorGrey"
+        android:textSize="12sp"
+        android:text="N/A"
+        android:textStyle="italic"
+        android:layout_below="@+id/tv_Player2Name1"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Player2Name1Score"
+        android:text="not updated"
+        android:layout_alignEnd="@+id/tv_Player2Name1"
+        android:layout_below="@+id/tv_Player2Name"
+        android:layout_marginEnd="10dp"
+        android:textSize="15sp">
+
+    </TextView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Player2Name2"
+        android:text="Jos buttler"
+        android:layout_below="@+id/tv_Player2Name1Status"
+        android:textSize="15sp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Player2Name2Score"
+        android:text="na"
+        android:layout_alignEnd="@+id/tv_Player2Name2"
+        android:layout_below="@+id/tv_Player2Name1Status"
+        android:layout_marginEnd="10dp"
+        android:textSize="15sp">
+
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Player2Name2Status"
+        android:textColor="@color/colorGrey"
+        android:textSize="12sp"
+        android:text="N/A"
+        android:textStyle="italic"
+        android:layout_below="@+id/tv_Player2Name2"
+
+        />
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Player2Name3"
+        android:text="Smith"
+        android:layout_below="@+id/tv_Player2Name2Status"
+        android:textSize="15sp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Player2Name3Status"
+        android:textColor="@color/colorGrey"
+        android:textSize="12sp"
+        android:text="N/A"
+        android:textStyle="italic"
+        android:layout_below="@+id/tv_Player2Name3"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Player2Name3Score"
+        android:text="na"
+        android:layout_alignEnd="@+id/tv_Player2Name3"
+        android:layout_below="@+id/tv_Player2Name2Status"
+        android:layout_marginEnd="10dp"
+        android:textSize="15sp">
+
+    </TextView>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Player2Name4"
+        android:text="D Warnerth"
+        android:layout_below="@+id/tv_Player2Name3Status"
+        android:textSize="15sp"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Player2Name4Status"
+        android:textColor="@color/colorGrey"
+        android:textSize="12sp"
+        android:text="N/A"
+        android:textStyle="italic"
+        android:layout_below="@+id/tv_Player2Name4"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Player2Name4Score"
+        android:text="na"
+        android:layout_alignEnd="@+id/tv_Player2Name4"
+        android:layout_below="@+id/tv_Player2Name3Status"
+        android:layout_marginEnd="10dp"
+        android:textSize="15sp">
+
+    </TextView>
+</RelativeLayout>
+
+</LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_width="match_parent"
+        android:id="@+id/pichart"
+        android:layout_height="match_parent">
+
+    </com.github.mikephil.charting.charts.PieChart>
+
+
+
+
+
+</LinearLayout>

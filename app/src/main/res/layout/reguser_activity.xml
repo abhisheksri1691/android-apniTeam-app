@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tvWarnning"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:text="Team Squard Not declaied Yet"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        >
+
+
+    </TextView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:visibility="visible"
+    android:id="@+id/formlayout">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 1"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold">
+    </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edFUserName"
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+        android:hint="Enter First User Name">
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Player 2"
+        android:textStyle="bold">
+    </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edSUserName"
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Second User Name">
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:id="@+id/tv_choose1"
+        android:textColor="@color/colorBrown"
+        android:text="Click To Choose player for FirstUser"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:id="@+id/tv_player1_preview"
+        android:text=""
+        android:layout_marginTop="10dp"
+        />
+
+<!--    <com.libaml.android.view.chip.ChipLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:id="@+id/chipText"-->
+<!--        app:textSize_="7dp"-->
+<!--        app:chipPadding_="4dp"-->
+<!--        app:chipTextPadding_="2dp"-->
+<!--        app:chipLayoutDrawable_="@drawable/edittext_theme_landing_page"-->
+<!--        app:textColor_="@android:color/black"-->
+<!--        app:deleteIcon_="@android:drawable/presence_offline"-->
+<!--        app:chipDrawable_="@drawable/round_corner_drawble"-->
+<!--        app:labelPosition_="left"-->
+<!--        >-->
+
+<!--    </com.libaml.android.view.chip.ChipLayout>-->
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:textStyle="bold"
+    android:textSize="15sp"
+    android:id="@+id/tv_choose2"
+    android:textColor="@color/colorBrown"
+    android:text="Click To Choose player for SecondUser">
+
+
+</TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:id="@+id/tv_player2_preview"
+        android:text=""
+        android:layout_marginTop="10dp"
+        />
+<!--    <com.libaml.android.view.chip.ChipLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:id="@+id/chipText2"-->
+<!--        app:textSize_="7dp"-->
+<!--        app:chipPadding_="4dp"-->
+<!--        app:chipTextPadding_="2dp"-->
+<!--        app:chipLayoutDrawable_="@drawable/edittext_theme_landing_page"-->
+<!--        app:textColor_="@android:color/white"-->
+<!--        app:deleteIcon_="@android:drawable/presence_offline"-->
+<!--        app:chipDrawable_="@drawable/round_corner_drawble"-->
+<!--        app:labelPosition_="left"-->
+<!--        >-->
+
+<!--    </com.libaml.android.view.chip.ChipLayout>-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/btSaveUser"
+        android:layout_marginTop="50dp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/colorAccent"
+        />
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>
